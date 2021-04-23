@@ -82,4 +82,10 @@ h1 {
     background: var(--accent);
     cursor: pointer;
 }
+#bottom-left {
+    transform: rotate(-90deg);
+}
+#top-right {
+    transform: rotate(90deg);
+}
   
