@@ -1,10 +1,10 @@
-var form = document.querySelector('form');
-var topLeftSlider = form.querySelector("#topLeft");
-var topRightSlider = form.querySelector("#topRight");
-var bottomRightSlider = form.querySelector("#bottomRight");
-var bottomLeftSlider = form.querySelector("#bottomLeft");
-var output = form.querySelector("#output");
-var box = document.querySelector("example-box");
+const form = document.querySelector('form');
+const topLeftSlider = form.querySelector("#topLeft");
+const topRightSlider = form.querySelector("#topRight");
+const bottomRightSlider = form.querySelector("#bottomRight");
+const bottomLeftSlider = form.querySelector("#bottomLeft");
+const output = form.querySelector("#output");
+const box = document.querySelector("example-box");
 
 function resetBoxBorders() {
   box.style.borderRadius = "0 0 0 0";

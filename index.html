@@ -5,11 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style.css">
+    <script src="https://kit.fontawesome.com/9a4ff9ebff.js" crossorigin="anonymous"></script>
     <title>Document</title>
 </head>
 <body> 
 <form class='app'>
-    <h1>border-radius generator</h1>
+    <h1>Border-Radius Generator</h1>
   
     <!-- forked from 
       https://dev.to/crabyke/border-radius-generator-tool-vanillajs-4aan
@@ -37,14 +38,14 @@
   
     <example-box></example-box>
   
-    <textarea id='output'>
+    <div id='output'>
       border-radius: 0% 0% 0% 0%;
-    </textarea>
-  
-    <actions>
-      <button id='reset' >Reset</button>
-      <button id='copy'>Copy CSS</button>
-    </actions>
+      </div>
+    <div class="actions">
+        <div id='reset'><i class="fas fa-redo-alt"></i></div>
+        <div id='copy'><i class="far fa-copy"></i></div>
+      </div>
+    
   </form>
     <script src="./script.js"></script>    
 </body>
