@@ -1,0 +1,7 @@
+.bottom-left{
+    transform: rotate(-90deg);
+}  
+.top-right{
+    transform: rotate(90deg);
+}
+  

@@ -8,6 +8,32 @@
     <title>Document</title>
 </head>
 <body>
+    <div id="container">
+        <h2>BORDER RADIUS GENERATOR</h2>
+        <div class="slider-container">
+          <label for="topLeftSlider">Top Left</label>
+          <input type="range" min="0" max="100" value="0" class="slider" id="topLeftSlider">
+        </div>
+        <div id="left-box-right">
+          <div class="slider-container bottom-left">
+            <label for="bottomLeftSlider">Bottom Left</label>
+            <input type="range" min="0" max="100" value="0" class="slider" id="bottomLeftSlider">
+          </div>
+          <div id="box"></div>
     
+          <div class="slider-container top-right">
+            <label for="topRightSlider">Top Right</label>
+            <input type="range" min="0" max="100" value="0" class="slider" id="topRightSlider">
+          </div>
+        </div>
+        <div class="slider-container">
+          <input type="range" min="0" max="100" value="0" class="slider" id="bottomRightSlider">
+          <label for="bottomRightSlider">Bottom Right</label>
+        </div>
+        <textarea name="css-code" id="css-code" cols="30" rows="5">border-radius: 0% 0% 0% 0%;</textarea>
+        <button id="copyCss" class="btn">Copy CSS</button>
+        <button id="reset" class="btn">Reset</button>
+      </div>
+      <script src="./script.js"></script>    
 </body>
 </html>
