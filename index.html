@@ -7,33 +7,45 @@
     <link rel="stylesheet" href="./style.css">
     <title>Document</title>
 </head>
-<body>
-    <div id="container">
-        <h2>BORDER RADIUS GENERATOR</h2>
-        <div class="slider-container">
-          <label for="topLeftSlider">Top Left</label>
-          <input type="range" min="0" max="100" value="0" class="slider" id="topLeftSlider">
-        </div>
-        <div id="left-box-right">
-          <div class="slider-container bottom-left">
-            <label for="bottomLeftSlider">Bottom Left</label>
-            <input type="range" min="0" max="100" value="0" class="slider" id="bottomLeftSlider">
-          </div>
-          <div id="box"></div>
-    
-          <div class="slider-container top-right">
-            <label for="topRightSlider">Top Right</label>
-            <input type="range" min="0" max="100" value="0" class="slider" id="topRightSlider">
-          </div>
-        </div>
-        <div class="slider-container">
-          <input type="range" min="0" max="100" value="0" class="slider" id="bottomRightSlider">
-          <label for="bottomRightSlider">Bottom Right</label>
-        </div>
-        <textarea name="css-code" id="css-code" cols="30" rows="5">border-radius: 0% 0% 0% 0%;</textarea>
-        <button id="copyCss" class="btn">Copy CSS</button>
-        <button id="reset" class="btn">Reset</button>
-      </div>
+<body> 
+<form class='app'>
+    <h1>border-radius generator</h1>
+  
+    <!-- forked from 
+      https://dev.to/crabyke/border-radius-generator-tool-vanillajs-4aan
+    -->
+  
+    <range-slider class='top left'>
+      <label for='topLeft'>Top Left</label>
+      <input id='topLeft' type='range' min='0' max='100' value='0'>
+    </range-slider>
+  
+    <range-slider class='top right'>
+      <label for='topRight'>Top Right</label>
+      <input id='topRight' type='range' min='0' max='100' value='0'>
+    </range-slider>
+  
+    <range-slider class='bottom right'>
+      <label for='bottomRight'>Bottom Right</label>
+      <input id='bottomRight' type='range' min='0' max='100' value='0'>
+    </range-slider>
+  
+    <range-slider class='bottom left'>
+      <label for='bottomLeft'>Bottom Left</label>
+      <input id='bottomLeft' type='range' min='0' max='100' value='0'>
+    </range-slider>
+  
+    <example-box></example-box>
+  
+    <textarea id='output'>
+      border-radius: 0% 0% 0% 0%;
+    </textarea>
+  
+    <actions>
+      <button id='reset' >Reset</button>
+      <button id='copy'>Copy CSS</button>
+    </actions>
+  </form>
       <script src="./script.js"></script>    
 </body>
 </html>
