@@ -16,7 +16,7 @@ function resetSliders() {
   bottomLeftSlider.value = 0;
 }
 function renderOutput() {
-  output.textContent = `border-radius: ${topLeftSlider.value}% ${topRightSlider.value}% ${bottomRightSlider.value}% ${bottomLeftSlider.value}%;`; 
+  output.textContent = `border-radius: ${topLeftSlider.value}% ${topRightSlider.value}% ${bottomRightSlider.value}% ${bottomLeftSlider.value}%;`;
 }
 function updateInterface() {
   box.style.borderTopLeftRadius = topLeftSlider.value + "%";
@@ -33,7 +33,6 @@ function resetInterface() {
 form.addEventListener('input', function(event) {
   updateInterface()
 })
-
 document.addEventListener('click', function(event) {
 event.preventDefault();
   if (event.target.matches('#reset') ) {
