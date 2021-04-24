@@ -53,23 +53,17 @@ h1 {
     color: white;
     width: 400px;
     padding: 30px;
-    margin-top: 20px
+    margin-top: 20px;
+    overflow:hidden;
+    outline: none;
+    border: none;
 }
 .actions{
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
-    fill: white;
-    font-size: 20px;
-    
+    color: white;   
 }
-/* .actions{
-    position: absolute;
-    bottom: -47px;
-    right: 170px;
-    font-size: 20px;
-    color: white;
-} */
 .fa-redo-alt{
     margin-right: 10px;
 }
